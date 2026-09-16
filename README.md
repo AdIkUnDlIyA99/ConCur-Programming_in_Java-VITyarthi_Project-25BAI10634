@@ -1,8 +1,4 @@
-# ConCur — Currency Converter
-
-## Project title
-
-**ConCur: Offline Currency Converter and Exchange-Rate Management System**
+# ConCur — Offline Currency Converter and Exchange-Rate Management System
 
 ## Overview of the project
 
