@@ -79,9 +79,6 @@ javac -d build\test-classes $allFiles
 java -cp build\test-classes com.vit.currencyconverter.service.ConversionServiceTest
 ```
 
-## Screenshots (optional but recommended)
-
-Recommended screenshots are the main menu, a successful conversion, conversion history, and CSV export. Save them in `docs/screenshots/` and add them here with Markdown image links.
 
 ## Project structure
 
@@ -103,5 +100,3 @@ ConCur-Programming_in_Java-VITyarthi_Project-25BAI10634/
     └── test/java/com/vit/currencyconverter/
         └── service/               Conversion service tests
 ```
-
-The `com/vit/currencyconverter` folders are Java packages, not unnecessary copies of the project. Generated folders such as `build`, `exports`, and local database files are ignored by Git.
