@@ -1,5 +1,9 @@
 # ConCur — Currency Converter
 
+## Project title
+
+**ConCur: Offline Currency Converter and Exchange-Rate Management System**
+
 ## Overview of the project
 
 ConCur is a beginner-friendly Java console application for converting amounts between currencies using locally stored exchange rates. It works offline, stores conversion history, and demonstrates the CSE2006 Programming in Java syllabus.
@@ -22,7 +26,6 @@ The included rates are sample academic values, not live market rates.
 - JDBC and H2 embedded database
 - Java Collections Framework and I/O streams
 - `BigDecimal` for calculations
-- JUnit 5 test source
 - Git and GitHub
 
 ## Steps to install & run the project
@@ -66,8 +69,20 @@ The program should display `Storage mode: JDBC database`. If H2 is unavailable, 
 5. Choose `2` and search for `Indian Rupee`.
 6. Choose `8` to exit.
 
-Invalid amounts, unknown currencies, missing rates, and invalid menu choices should produce helpful errors without terminating the program. Automated tests are under `src/test/java`.
+Invalid amounts, unknown currencies, missing rates, and invalid menu choices should produce helpful errors without terminating the program. The dependency-free test is under `src/test/java`.
 
+To run the dependency-free conversion test:
+
+```powershell
+New-Item -ItemType Directory -Force build\test-classes | Out-Null
+$allFiles = Get-ChildItem src -Recurse -Filter *.java | ForEach-Object { $_.FullName }
+javac -d build\test-classes $allFiles
+java -cp build\test-classes com.vit.currencyconverter.service.ConversionServiceTest
+```
+
+## Screenshots (optional but recommended)
+
+Recommended screenshots are the main menu, a successful conversion, conversion history, and CSV export. Save them in `docs/screenshots/` and add them here with Markdown image links.
 
 ## Project structure
 
@@ -75,7 +90,6 @@ Invalid amounts, unknown currencies, missing rates, and invalid menu choices sho
 ConCur-Programming_in_Java-VITyarthi_Project-25BAI10634/
 ├── data/exchange-rates.csv       Sample exchange rates
 ├── lib/h2.jar                    JDBC driver included for direct running
-├── pom.xml                       Optional Maven configuration
 ├── README.md                     This file
 ├── statement.md                  Project statement
 └── src/
@@ -90,3 +104,5 @@ ConCur-Programming_in_Java-VITyarthi_Project-25BAI10634/
     └── test/java/com/vit/currencyconverter/
         └── service/               Conversion service tests
 ```
+
+The `com/vit/currencyconverter` folders are Java packages, not unnecessary copies of the project. Generated folders such as `build`, `exports`, and local database files are ignored by Git.
