@@ -68,9 +68,6 @@ The program should display `Storage mode: JDBC database`. If H2 is unavailable, 
 
 Invalid amounts, unknown currencies, missing rates, and invalid menu choices should produce helpful errors without terminating the program. Automated tests are under `src/test/java`.
 
-## Screenshots (optional but recommended)
-
-Recommended screenshots are the main menu, a successful conversion, conversion history, and CSV export. Save them in `docs/screenshots/` and add them here with Markdown image links.
 
 ## Project structure
 
