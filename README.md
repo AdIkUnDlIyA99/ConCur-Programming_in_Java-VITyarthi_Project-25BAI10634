@@ -6,8 +6,7 @@
 
 ## Overview of the project
 
-ConCur is a beginner-friendly Java console application for converting amounts between currencies using locally stored exchange rates. It works offline, stores conversion history, and demonstrates the CSE2006 Programming in Java syllabus.
-
+ConCur is a beginner-friendly Java console application for converting amounts between currencies using locally stored exchange rates. It works offline and stores conversion history.
 ## Features
 
 - Search currencies by name or code
