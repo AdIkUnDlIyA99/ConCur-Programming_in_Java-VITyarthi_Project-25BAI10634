@@ -10,7 +10,6 @@ The application maintains a currency catalogue, performs conversions, manages lo
 
 ## Target users
 
-- Students learning Java
 - Users who need demonstrations with locally supplied rates
 - Administrators who maintain the offline rate table
 
