@@ -79,8 +79,14 @@ ConCur-Programming_in_Java-VITyarthi_Project-25BAI10634/
 ├── README.md                     This file
 ├── statement.md                  Project statement
 └── src/
-    ├── main/java/                Application source code
-    └── test/java/                Test source code
+    ├── main/java/com/vit/currencyconverter/
+    │   ├── app/                  Main console entry point
+    │   ├── exception/            Custom validation exceptions
+    │   ├── model/                Currency, rate, and history classes
+    │   ├── repository/            JDBC and local-file storage classes
+    │   ├── service/               Conversion and rate-management logic
+    │   ├── task/                  Background rate-monitoring thread
+    │   └── util/                  Database and CSV helpers
+    └── test/java/com/vit/currencyconverter/
+        └── service/               Conversion service tests
 ```
-
-Generated folders such as `build`, `exports`, and local database files are ignored by Git.
